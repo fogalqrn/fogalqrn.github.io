@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fogalqrn</title>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #0a0a0a;
-      color: #ccc;
-      font-family: 'Helvetica', 'Arial', sans-serif;
-    }
-    .content {
-      text-align: center;
-      padding: 50px;
-      max-width: 100%;
-    }
-    h1 {
-      font-size: 4rem;
-      font-weight: bold;
-      margin: 0;
-    }
-    p {
-      font-size: 1.2rem;
-      margin: 20px 0;
-    }
-    img {
-      width: 200px;
-      margin-top: 30px;
-    }
+    body { margin:0; font-family: Arial, sans-serif; background:#ffffff; color:#000000; }
+    header { padding:60px 20px; text-align:center; background:#000000; color:#ffffff; }
+    header h1 { font-size:3rem; margin-bottom:10px; }
+    header p { opacity:0.8; }
+    section { padding:60px 20px; max-width:1000px; margin:auto; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+    .card { background:#ffffff; color:#000000; padding:20px; border-radius:12px; border:2px solid #963C00; }
+    footer { text-align:center; padding:20px; opacity:0.6; }
+    button { padding:12px 24px; border:none; border-radius:8px; background:#963C00; color:#ffffff; cursor:pointer; }
   </style>
 </head>
 <body>
 
-  <div class="content">
-    <h1>Fogalqrn</h1>
-    <p>Above the century.</p>
-    <img src="logo.png" alt="Fogalqrn Logo">
+<header>
+  <h1>Fogalqrn</h1>
+  <p>Tech Conglomerate</p>
+  <button>Contact Us</button>
+</header>
+
+<section>
+  <h2>What We Do</h2>
+  <div class="grid">
+    <div class="card">Web Development</div>
+    <div class="card">Mobile Apps</div>
+    <div class="card">Consulting</div>
   </div>
+</section>
+
+<section>
+  <h2>About Us</h2>
+  <p>Short description about your company, mission, and values.</p>
+</section>
+
+<footer>
+  © 2026 Fogalqrn. All rights reserved.
+</footer>
 
 </body>
 </html>
