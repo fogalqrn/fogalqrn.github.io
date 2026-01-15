@@ -1,0 +1,30 @@
+:root{--main:#963C00;--black:#000;--white:#fff}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui;background:#fff;color:#000}
+
+.nav{position:sticky;top:0;background:#fff;padding:20px 40px;display:flex;justify-content:space-between;align-items:center;z-index:10}
+.nav a{margin-left:18px;text-decoration:none;color:#000}
+.nav button{margin-right:20px;padding:6px 12px;border:1px solid var(--main);background:none;cursor:pointer}
+
+.logo{width:90px}
+
+.hero{height:90vh;background:var(--main);color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.hero-img{width:320px;height:140px;border:2px dashed #fff;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+
+.section{padding:100px 20px;max-width:1100px;margin:auto}
+.dark{background:#000;color:#fff}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;margin-top:40px}
+.card{border:2px solid var(--main);padding:30px;border-radius:16px;background:#fff;color:#000;transition:.3s}
+.dark .card{background:#000;color:#fff}
+.card:hover{transform:translateY(-6px)}
+
+.img-box,.img-wide{border:2px dashed var(--main);margin-top:30px;display:flex;align-items:center;justify-content:center;color:var(--main)}
+.img-box{height:260px}
+.img-wide{height:360px}
+
+footer{padding:40px;text-align:center;background:#000;color:#fff}
+
+/* reveal animation */
+.reveal{opacity:0;transform:translateY(40px);transition:1s}
+.reveal.active{opacity:1;transform:none}
