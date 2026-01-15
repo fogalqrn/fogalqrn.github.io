@@ -1,46 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fogalqrn</title>
-  <style>
-    body { margin:0; font-family: Arial, sans-serif; background:#ffffff; color:#000000; }
-    header { padding:60px 20px; text-align:center; background:#000000; color:#ffffff; }
-    header h1 { font-size:3rem; margin-bottom:10px; }
-    header p { opacity:0.8; }
-    section { padding:60px 20px; max-width:1000px; margin:auto; }
-    .grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
-    .card { background:#ffffff; color:#000000; padding:20px; border-radius:12px; border:2px solid #963C00; }
-    footer { text-align:center; padding:20px; opacity:0.6; }
-    button { padding:12px 24px; border:none; border-radius:8px; background:#963C00; color:#ffffff; cursor:pointer; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fogalqrn</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>Fogalqrn</h1>
-  <p>Tech Conglomerate</p>
-  <button>Contact Us</button>
+<header class="nav">
+  <img src="logo.png" class="logo">
+  <nav>
+    <button id="langBtn">AR</button>
+    <a href="#about" data-en="About" data-ar="من نحن">About</a>
+    <a href="#companies" data-en="Companies" data-ar="الشركات">Companies</a>
+    <a href="#vision" data-en="Vision" data-ar="الرؤية">Vision</a>
+    <a href="#contact" data-en="Contact" data-ar="التواصل">Contact</a>
+  </nav>
 </header>
 
-<section>
-  <h2>What We Do</h2>
+<section class="hero">
+  <div class="hero-img">Main Title Image</div>
+  <p data-en="Saudi Tech Conglomerate · Launching 2026"
+     data-ar="مجموعة تقنية سعودية · الإطلاق 2026">
+     Saudi Tech Conglomerate · Launching 2026
+  </p>
+</section>
+
+<section id="about" class="section reveal">
+  <h2 data-en="About Fogalqrn" data-ar="عن فوجالقرن">About Fogalqrn</h2>
+  <p data-en="Fogalqrn (AboveCentry) is a Saudi holding company building future technologies across AI, cloud, software, hardware and digital innovation."
+     data-ar="فوجالقرن شركة تقنية سعودية قابضة تطور تقنيات المستقبل في الذكاء الاصطناعي والسحابة والبرمجيات والأجهزة.">
+     Fogalqrn (AboveCentry) is a Saudi holding company building future technologies across AI, cloud, software, hardware and digital innovation.
+  </p>
+  <div class="img-box">About Image</div>
+</section>
+
+<section id="companies" class="section dark reveal">
+  <h2 data-en="Our Companies" data-ar="شركاتنا">Our Companies</h2>
   <div class="grid">
-    <div class="card">Web Development</div>
-    <div class="card">Mobile Apps</div>
-    <div class="card">Consulting</div>
+    <div class="card">ALEF<br><small>Advanced research & innovation labs</small></div>
+    <div class="card">FogCloud<br><small>Saudi cloud & infrastructure services</small></div>
+    <div class="card">FogVentures<br><small>Startup investments & venture capital</small></div>
+    <div class="card">FogAI<br><small>AI models, automation & data science</small></div>
+    <div class="card">FogStudios<br><small>Digital media, design & experiences</small></div>
   </div>
 </section>
 
-<section>
-  <h2>About Us</h2>
-  <p>Short description about your company, mission, and values.</p>
+<section id="vision" class="section reveal">
+  <h2 data-en="Vision" data-ar="الرؤية">Vision</h2>
+  <p data-en="To lead the region in sovereign technology and export Saudi-built innovation globally."
+     data-ar="قيادة المنطقة في التقنيات السيادية وتصدير الابتكار السعودي للعالم.">
+     To lead the region in sovereign technology and export Saudi-built innovation globally.
+  </p>
+  <div class="img-wide">Vision Image</div>
 </section>
 
-<footer>
-  © 2026 Fogalqrn. All rights reserved.
-</footer>
+<section id="contact" class="section dark reveal">
+  <h2 data-en="Contact" data-ar="التواصل">Contact</h2>
+  <p>Email: info@fogalqrn.com</p>
+  <p>Location: Al-Khobar, Saudi Arabia</p>
+</section>
 
+<footer>© 2026 Fogalqrn</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
