@@ -1,6 +1,6 @@
 :root{--main:#963C00;--black:#000;--white:#fff}
 *{box-sizing:border-box}
-body{margin:0;font-family:Lexend;background:#fff;color:#000}
+body{margin:0;font-family:'Lexend', Almarai;background:#fff;color:#000}
 
 .nav{position:sticky;top:0;background:#fff;padding:20px 40px;display:flex;justify-content:space-between;align-items:center;z-index:10}
 .nav a{margin-left:18px;text-decoration:none;color:#000}
