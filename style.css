@@ -14,8 +14,8 @@ body{margin:0;font-family:Lenxed,system-ui;background:#fff;color:#000}
   z-index:10;
 }
 .nav-logo{
-  width:20px;
-  height:20px;
+  width:75px;
+  height:75px;
 }
 .nav nav{
   display:flex;
@@ -44,7 +44,7 @@ body{margin:0;font-family:Lenxed,system-ui;background:#fff;color:#000}
   text-align:center;
 }
 .hero-logo{
-  width:75vw;
+  width:80vw;
   max-width:900px;
   height:auto;
   margin-bottom:30px;
