@@ -1,26 +1,23 @@
-// reveal animation
-const items=document.querySelectorAll('.reveal');
-const obs=new IntersectionObserver(e=>{
-  e.forEach(x=>x.isIntersecting&&x.target.classList.add('active'))
-},{threshold:.2});
-items.forEach(i=>obs.observe(i));
+// smooth fade
+const fades=document.querySelectorAll('.fade');
+const io=new IntersectionObserver(e=>{
+e.forEach(x=>x.isIntersecting&&x.target.classList.add('show'))
+},{threshold:.15});
+fades.forEach(i=>io.observe(i));
 
-// language toggle
+// language + favicon
 let ar=false;
+const fav=document.getElementById('favicon');
 const btn=document.getElementById('langBtn');
-const heroLogo=document.getElementById('heroLogo');
 
 btn.onclick=()=>{
-  ar=!ar;
-  btn.innerText=ar?'EN':'AR';
-
-  heroLogo.src=ar
-    ? 'FogAlqrn-color1-proto3ARB-TP.png'
-    : 'FogAlqrn-color1-proto4ENG-TP.png';
-
-  document.querySelectorAll('[data-en]').forEach(el=>{
-    el.innerText=ar?el.dataset.ar:el.dataset.en;
-  });
-
-  document.documentElement.dir=ar?'rtl':'ltr';
+ar=!ar;
+btn.innerText=ar?'EN':'ع';
+document.querySelectorAll('[data-en]').forEach(el=>{
+el.innerText=ar?el.dataset.ar:el.dataset.en;
+});
+document.documentElement.dir=ar?'rtl':'ltr';
+fav.href=ar
+?'FogAlqrn-color1-proto3ARB-TP.png'
+:'FogAlqrn-color1-proto4ENG-TP.png';
 };
