@@ -14,8 +14,8 @@ body{margin:0;font-family:Lenxed,system-ui;background:#fff;color:#000}
   z-index:10;
 }
 .nav-logo{
-  width:70px;
-  height:auto;
+  width:20px;
+  height:20px;
 }
 .nav nav{
   display:flex;
