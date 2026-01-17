@@ -1,6 +1,6 @@
 :root{--main:#963C00;--black:#000;--white:#fff}
 *{box-sizing:border-box}
-body{margin:0;font-family:Lenxed,system-ui;background:#fff;color:#000}
+body{margin:0;font-family:Lenxed,Almarai;background:#fff;color:#000}
 
 /* NAV */
 .nav{
