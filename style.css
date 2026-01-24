@@ -1,17 +1,6 @@
-:root{
-  --main:#963C00;
-  --black:#000;
-  --white:#fff;
-}
-
+:root{--main:#963C00;--black:#000;--white:#fff}
 *{box-sizing:border-box}
-
-body{
-  margin:0;
-  font-family:Lenxed,system-ui;
-  background:#fff;
-  color:#000;
-}
+body{margin:0;font-family:Lenxed,Almarai;background:#fff;color:#000}
 
 /* NAV */
 .nav{
@@ -28,31 +17,22 @@ body{
 
 /* top-left logo (horizontal) */
 .nav-logo{
-  width:160px;
-  height:auto;
+  width:140px; /* ~1.75 × height */
+  height:80px;
   object-fit:contain;
-  cursor:pointer;
 }
 
 /* center links */
-.nav-links{
+.nav nav{
   display:flex;
   justify-content:center;
-  align-items:center;
-  gap:12px;
+  gap:28px;
 }
-
 .nav a{
-  color:#000; /* black text */
+  color:#fff;
   text-decoration:none;
   font-weight:600;
-  font-size:16px;
   white-space:nowrap;
-}
-
-.dot{
-  color:#fff;
-  font-size:18px;
 }
 
 /* language button */
@@ -66,7 +46,7 @@ body{
   background:none;
   color:#fff;
   cursor:pointer;
-  font-size:20px;
+  font-size:18px;
   font-family:"Almarai",system-ui;
 }
 
@@ -80,7 +60,7 @@ body{
   text-align:center;
 }
 .hero-logo{
-  width:75vw;
+  width:80vw;
   max-width:900px;
   height:auto;
   margin-bottom:30px;
@@ -89,11 +69,7 @@ body{
 .hero p{opacity:.7}
 
 /* SECTIONS */
-.section{
-  padding:100px 20px;
-  max-width:1100px;
-  margin:auto;
-}
+.section{padding:100px 20px;max-width:1100px;margin:auto}
 .dark{background:#000;color:#fff}
 
 /* GRID */
@@ -125,25 +101,11 @@ body{
 .img-wide{max-height:none}
 
 /* FOOTER */
-footer{
-  padding:40px;
-  text-align:center;
-  background:#000;
-  color:#fff;
-}
+footer{padding:40px;text-align:center;background:#000;color:#fff}
 
 /* REVEAL */
-.reveal{
-  opacity:0;
-  transform:translateY(40px);
-  transition:1s;
-}
-.reveal.active{
-  opacity:1;
-  transform:none;
-}
+.reveal{opacity:0;transform:translateY(40px);transition:1s}
+.reveal.active{opacity:1;transform:none}
 
 /* RTL */
-html[dir="rtl"]{
-  font-family:"Almarai",system-ui;
-}
+html[dir="rtl"]{font-family:"Almarai",system-ui}
