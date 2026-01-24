@@ -10,11 +10,11 @@ body{margin:0;font-family:Lenxed,Almarai;background:#fff;color:#000}
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:20px;
+  gap:2px;
   z-index:10;
 }
 .nav-logo{
-  width:150px;
+  width:200px;
   height:100px;
 }
 .nav nav{
