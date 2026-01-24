@@ -4,35 +4,53 @@ body{margin:0;font-family:Lenxed,Almarai;background:#fff;color:#000}
 
 /* NAV */
 .nav{
-  position:sticky;top:0;
+  position:sticky;
+  top:0;
   background:var(--main);
-  padding:5px 40px;
-  display:flex;
+  padding:8px 32px;
+  display:grid;
+  grid-template-columns:auto 1fr auto;
   align-items:center;
-  justify-content:space-between;
-  gap:2px;
+  gap:24px;
   z-index:10;
 }
+
+/* top-left logo (horizontal) */
 .nav-logo{
-  width:180px;
-  height:80px;
+  width:70px;              /* ~1.75 × height */
+  height:40px;
+  object-fit:contain;
 }
+
+/* center links */
 .nav nav{
   display:flex;
-  flex:1;
-  justify-content:space-evenly;
+  justify-content:center;
+  gap:28px;
 }
-.nav a{color:#fff;text-decoration:none;font-weight:600}
+
+.nav a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  white-space:nowrap;
+}
+
+/* language button */
 #langBtn{
   width:40px;
   height:40px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   border:1px solid #fff;
   background:none;
   color:#fff;
   cursor:pointer;
-  font-size:20px;
+  font-size:18px;
   font-family:"Almarai",system-ui;
 }
+
 
 /* HERO */
 .hero{
