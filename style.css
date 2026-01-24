@@ -17,8 +17,8 @@ body{margin:0;font-family:Lenxed,Almarai;background:#fff;color:#000}
 
 /* top-left logo (horizontal) */
 .nav-logo{
-  width:70px;              /* ~1.75 × height */
-  height:40px;
+  width:140px;              /* ~1.75 × height */
+  height:80px;
   object-fit:contain;
 }
 
