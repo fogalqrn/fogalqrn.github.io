@@ -14,8 +14,8 @@ body{margin:0;font-family:Lenxed,Almarai;background:#fff;color:#000}
   z-index:10;
 }
 .nav-logo{
-  width:75px;
-  height:75px;
+  width:150px;
+  height:100px;
 }
 .nav nav{
   display:flex;
